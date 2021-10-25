@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.paulrybitskyi.valuepicker.ValuePickerView
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            app:vpv_areDividersEnabled="false"
+            app:vpv_dividerColor="@android:color/transparent"
+            app:vpv_isInfiniteScrollEnabled="false"
+            app:vpv_maxVisibleItems="7"
+            app:vpv_textColor="@color/black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
